@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(yellow, orange);
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.todo-app{
+    background-color:bisque;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: orange 0 4px 6px;
+}
+h1{
+    color: orangered;
+    text-shadow: 0 4px 6px;
+}
+.todo-input{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+input{
+    flex:1;
+    padding: 10px;
+    /*order: 1px solid #ccc aqui iria esto pero en i diseño queda mal*/
+    border: none;
+    background-color: bisque;
+    border-radius: 5px;
+    box-shadow: orange 0 4px 6px;
+}
+
+button{
+    padding: 10px;
+    background-color: orangered;
+    color: bisque;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: orange 0 4px 6px;
+}
+button:hover{
+    background-color: orange;
+}
+#tasklist{
+    list-style: none;
+}
+
+/*del javascript*/
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: bisque;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.task-item.completed{
+    text-decoration: line-through;
+    background: green;
+}
+.task-item button{
+    background-color: orange;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: bisque;
+    cursor: pointer;
+}
+.task-item button:hover{
+    background-color: orange;
+}

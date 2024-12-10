@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: #264653;
+    color: #fff;
+    font-family: Arial;
+}
+
+.contenedor{
+    background-color:#2a9d8f;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    box-shadow: #132329 0 6px 8px;
+    margin: 20px;
+}
+
+h1{
+    font-family: Georgia;
+    padding: 15px;
+}
+
+p{
+    padding: 10px;
+}
+
+#adivinaInput{
+    border: none;
+    border-radius: 20px;
+    background-color: #2a9d8f;
+    box-shadow: #264653 0 4px 6px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#adivinaInput::placeholder{
+    color: #fff;
+}
+
+#adivinaInput:hover{
+    box-shadow: #264653 0 6px 6px;
+}
+
+
+.enviar{
+    border: none;
+    border-radius: 20px;
+    background-color: #f4a261;
+    box-shadow: #264653 0 4px 6px;
+    padding: 10px;
+    cursor:pointer;
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.enviar:hover{
+    box-shadow: #264653 0 6px 6px;
+}
+
+
