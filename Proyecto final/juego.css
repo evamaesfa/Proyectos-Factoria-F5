@@ -17,6 +17,7 @@ body{
     text-align: center;
     box-shadow: #132329 0 6px 8px;
     margin: 20px;
+    justify-content: center;
 }
 
 h1{
@@ -31,7 +32,7 @@ p{
 #adivinaInput{
     border: none;
     border-radius: 20px;
-    background-color: #2a9d8f;
+    background-color: #f4a261;
     box-shadow: #264653 0 4px 6px;
     padding: 10px;
     cursor: pointer;
@@ -62,6 +63,21 @@ p{
 
 .enviar:hover{
     box-shadow: #264653 0 6px 6px;
+    background-color: #e76f51;
 }
 
+#reset{
+    border: none;
+    border-radius: 20px;
+    background-color: #f4a261;
+    box-shadow: #264653 0 4px 6px;
+    padding: 10px;
+    cursor:pointer;
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
+#reset:hover{
+    box-shadow: #264653 0 6px 6px;
+}

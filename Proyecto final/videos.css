@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #264653;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+
+/*navbar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.navbot{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#logo{
+    width: 30px;
+    height: 30px;
+}
+
+
+/*contenido*/
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ; /*1fr es una fraccion de pixel, que son 600 pixeles*/
+    gap: 40px;
+    width: 90%;
+    overflow: hidden;
+}
+
+h3{
+    text-align: center;
+    padding: 5px;
+}
+
+.videoCard{
+    position: relative;
+    overflow: hidden;
+    background-color: #f4a261;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px #132329;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.videoCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px #132329;
+}
+
+.videoCard iframe{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    display: block;
+    border-radius:20px;
+}

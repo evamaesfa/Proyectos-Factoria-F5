@@ -1,10 +1,51 @@
 body{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
     height: 100vh;
+    background-color: #264653;
+    color: #fff;
+    text-align: center;
 }
+
+/*navbar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.navbot{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#logo{
+    width: 30px;
+    height: 30px;
+}
+
+/*contenido*/
 h1{
     font-family: 'Libre Baskerville';
-    font-size: 22px;
+    font-size: 30px;
+}
+
+footer{
+    display: flex;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 160px;
+    color: #dadada;
+    justify-content: space-around;
+}
+.footer{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.iconfooter{
+    height: 20px;
+    width: auto;
+    cursor: pointer;
 }
