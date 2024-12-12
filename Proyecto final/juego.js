@@ -31,14 +31,6 @@ function adivinar(){ //function NombredelaFuncion
         document.getElementById("reset").style.display="block";}
     else{ 
         experimento = "¡Escribe un número!";}
-//no funciona
-    if (intentos === 10){
-        experimento = "¡Llegaste al máximo de intentos!";
-        clearInterval(tiempo);}
-    else (intentos > 10){
-        experimento = "¡Llegaste al máximo de intentos!";
-        clearInterval(tiempo);}
-//hasta aqui no funciona
 
     document.getElementById("resultado").innerText = experimento; //muestren los mensajes en pantalla
 }
@@ -54,4 +46,6 @@ function reiniciar(){
     iniciarTiempo();
 }
 
-window.onload = iniciarTiempo;
+document.addEventListener('DOMContentLoaded', () => { // Ens assegurem que el DOM estigui carregat abans de començar
+    iniciarTiempo(); // Inicia el temporitzador al carregar la pàgina
+});
