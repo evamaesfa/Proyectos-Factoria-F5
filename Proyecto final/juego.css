@@ -21,7 +21,8 @@ body{
 }
 
 h1{
-    font-family: Georgia;
+    font-family: 'Libre Baskerville';
+    font-size: 40px;    
     padding: 15px;
 }
 
