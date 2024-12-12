@@ -28,9 +28,10 @@ body{
 /*contenido*/
 h1{
     font-family: 'Libre Baskerville';
-    font-size: 30px;
+    font-size: 40px;
 }
 
+/*footer*/
 footer{
     display: flex;
     margin-top: 0;
