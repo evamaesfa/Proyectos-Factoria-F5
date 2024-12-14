@@ -7,11 +7,20 @@ body{
 }
 
 /*navbar*/
+a{
+    text-decoration: none;
+}
+
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: #264653;
+    border: none;
+    z-index: 5;
 }
 
 .navbot{
@@ -25,10 +34,96 @@ body{
     height: 30px;
 }
 
+.navbar::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; 
+    box-shadow: 
+        0 4px 6px #e9c46a, 
+        0 4px 6px #f4a261, 
+        0 4px 6px #e76f51, 
+        0 4px 9px #2a9d8f;
+    animation: move-shadow 5s linear infinite;
+}
+
+@keyframes move-shadow {
+    0% {
+        box-shadow: 
+            0 4px 6px #e9c46a, 
+    }
+    25% {
+        box-shadow: 
+            0 4px 6px #f4a261, 
+    }
+    50% {
+        box-shadow: 
+            0 4px 6px #e76f51, 
+    }
+    75% {
+        box-shadow: 
+            0 4px 9px #2a9d8f;
+    }
+    100% {
+        box-shadow: 
+            0 4px 6px #e9c46a,
+    }
+}
+
 /*contenido*/
+#factoriaF5{
+    height: 100px;
+    margin-top: 20px;
+}
+
 h1{
     font-family: 'Libre Baskerville';
-    font-size: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+
+.bloque{
+    display: flex;
+    flex-direction: column; /* Els elements es col·loquen en columna */
+    justify-content: center; /* Centrat verticalment */
+    align-items: center; /* Centrat horitzontalment */
+    background-color: #f4a261;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    height: 200px;   
+    width: 200px;
+    box-shadow: 0 6px 8px #132329;
+    text-align: center;
+}
+
+.texto{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+    color: #fff;
+}
+
+.foto{
+    height: 100px;   
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+    margin-top: 15px;
 }
 
 /*footer*/
