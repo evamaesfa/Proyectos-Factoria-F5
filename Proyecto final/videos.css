@@ -14,63 +14,89 @@ body{
 
 
 /*navbar*/
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-}
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        position: sticky;
+        top: 0px;
+        background-color: #264653;
+        z-index: 5;
+    }
 
-.navbot{
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-}
+    .navbot{
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+    }
 
-#logo{
-    width: 30px;
-    height: 30px;
-}
+    #logo{
+        width: 30px;
+        height: 30px;
+    }
 
 
 /*contenido*/
-h1{
-    text-align: center;
-    padding: 20px;
-}
+    h1{
+        text-align: center;
+        padding: 20px;
+    }
 
-.contenedor{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ; /*1fr es una fraccion de pixel, que son 600 pixeles*/
-    gap: 40px;
-    width: 90%;
-    overflow: hidden;
-}
+    .contenedor{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ; /*1fr es una fraccion de pixel, que son 600 pixeles*/
+        gap: 40px;
+        width: 90%;
+        overflow: hidden;
+    }
 
-h3{
-    text-align: center;
-    padding: 5px;
-}
+    h3{
+        text-align: center;
+        padding: 5px;
+    }
 
-.videoCard{
-    position: relative;
-    overflow: hidden;
-    background-color: #f4a261;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px #132329;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.videoCard:hover{
-    transform: scale(1.05);
-    box-shadow: 0 4px 6px #132329;
-}
+    .videoCard{
+        position: relative;
+        overflow: hidden;
+        background-color: #f4a261;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px #132329;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
 
-.videoCard iframe{
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 16/9;
-    border: none;
-    display: block;
-    border-radius:20px;
-}
+    .videoCard:hover{
+        transform: scale(1.05);
+        box-shadow: 0 4px 6px #132329;
+    }
+
+    .videoCard iframe{
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16/9;
+        border: none;
+        display: block;
+        border-radius:20px;
+    }
+
+/*footer*/
+    footer{
+        display: flex;
+        margin-top: 0;
+        margin-left: 50px;
+        margin-right: 160px;
+        color: #dadada;
+        justify-content: space-around;
+        padding: 40px;
+    }
+    .footer{
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+    }
+    .iconfooter{
+        height: 20px;
+        width: auto;
+        cursor: pointer;
+    }
